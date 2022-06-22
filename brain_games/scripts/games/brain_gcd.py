@@ -11,12 +11,12 @@ def main():
     i = 0
     while i < 3:
         result = brain_games.oper.doOperation(name)
-        if result != False:
+        if result is not False:
             i += 1
         else:
             return
     print("Congratulations, {0}!".format(name))
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()

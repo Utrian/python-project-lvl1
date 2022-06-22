@@ -26,7 +26,7 @@ def main():
         else:
             print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, {0}!".format(name))
             return
-    print("Congratulations, {0}!".format(name)) 
+    print("Congratulations, {0}!".format(name))
 
 
 if __name__ == '__main__':

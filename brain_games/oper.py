@@ -1,6 +1,6 @@
 """
-This module contains operator randomizer, 
-arithmetic question, addition, subtraction, 
+This module contains operator randomizer,
+arithmetic question, addition, subtraction,
 multiplication operations and the core-function
 of the brain_calc.py.
 """
@@ -62,7 +62,7 @@ def randomize_operator():
 
 def uncorrect_answ(answer, correct_answ, name):
     print(
-        '"{0}" is wrong answer ;(. Correct answer was "{1}".\nLet\'s try again, {2}!'
+        '"{0}" is wrong answer ;(. Correct answer was "{1}". Let\'s try again, {2}!'
         .format(answer, correct_answ, name)
         )
 
@@ -70,7 +70,7 @@ def uncorrect_answ(answer, correct_answ, name):
 def check(num1, num2, answer, funct, name):
     correct_answ = funct(num1, num2)
     if answer == correct_answ:
-            print('Correct!')
+        print('Correct!')
     else:
         uncorrect_answ(answer, correct_answ, name)
         return False

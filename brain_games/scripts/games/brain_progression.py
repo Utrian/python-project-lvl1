@@ -1,8 +1,10 @@
 """
 This game asks the user to find
-the missing number in an arithmetic 
+the missing number in an arithmetic
 progression.
 """
+
+import prompt
 
 from brain_games.cli import welcome_user
 
@@ -10,7 +12,6 @@ from brain_games.oper import uncorrect_answ
 
 from random import randint
 
-import prompt
 
 def main():
     name = welcome_user()
@@ -48,5 +49,5 @@ def main():
     print("Congratulations, {0}!".format(name))
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
