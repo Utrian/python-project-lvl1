@@ -5,3 +5,4 @@
 [![brain-calc](https://asciinema.org/a/kb5VrQcsIgL69CFXluaMfX9HG)]
 [![brain-gcd](https://asciinema.org/a/x6Q8ydenMr7Y0BTLu9RLKfKnc)]
 [![brain-progression](https://asciinema.org/a/ahTQLCgOz5UneivOGG5goqcrr)]
+[![brain-prime](https://asciinema.org/a/9JxhX84LGnLXPKz3MLJBaPu80)]
