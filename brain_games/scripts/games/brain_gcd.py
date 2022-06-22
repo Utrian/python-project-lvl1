@@ -6,7 +6,6 @@ import brain_games.oper
 
 
 def main():
-    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Find the greatest common divisor of given numbers.')
     i = 0

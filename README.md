@@ -4,3 +4,4 @@
 [![brain-even](https://asciinema.org/a/gFHLAF96FHl3EBqEzhK1q4fTZ)]
 [![brain-calc](https://asciinema.org/a/kb5VrQcsIgL69CFXluaMfX9HG)]
 [![brain-gcd](https://asciinema.org/a/x6Q8ydenMr7Y0BTLu9RLKfKnc)]
+[![brain-progression](https://asciinema.org/a/ahTQLCgOz5UneivOGG5goqcrr)]

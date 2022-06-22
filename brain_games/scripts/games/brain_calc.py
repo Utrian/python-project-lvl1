@@ -6,7 +6,6 @@ import brain_games.oper
 
 
 def main():
-    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('What is the result of the expression?')
     i = 0
