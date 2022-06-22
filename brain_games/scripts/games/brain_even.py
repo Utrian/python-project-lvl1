@@ -27,7 +27,7 @@ def main():
             return
         else:
             print("'yes' is wrong answer ;(. "
-            "Correct answer was 'no'. "
+            "Correct answer was 'no'."
             "\nLet's try again, {0}!".format(name))
             return
     print("Congratulations, {0}!".format(name))
