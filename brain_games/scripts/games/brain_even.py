@@ -21,10 +21,14 @@ def main():
             print("Correct!")
             i += 1
         elif number % 2 == 0 and answer == "no":
-            print("'no' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, {0}!".format(name))
+            print("'no' is wrong answer ;(. "
+            "Correct answer was 'yes'."
+            "\nLet's try again, {0}!".format(name))
             return
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, {0}!".format(name))
+            print("'yes' is wrong answer ;(. "
+            "Correct answer was 'no'. "
+            "\nLet's try again, {0}!".format(name))
             return
     print("Congratulations, {0}!".format(name))
 
