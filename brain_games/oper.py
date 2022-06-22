@@ -64,7 +64,7 @@ def uncorrect_answ(answer, correct_answ, name):
     print(
         '"{0}" is wrong answer ;(. Correct answer was "{1}". Let\'s try again, {2}!'
         .format(answer, correct_answ, name)
-        )
+    )
 
 
 def check(num1, num2, answer, funct, name):
