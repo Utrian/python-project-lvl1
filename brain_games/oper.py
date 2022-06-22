@@ -41,7 +41,10 @@ def isPrime(num):
 
 
 def arithmetic_question(num1, num2, operation):
-    print('Question: {0} {2} {1}'.format(num1, num2, operation))
+    if operation == '':
+        print('Question: {0} {1}'.format(num1, num2))
+    else:
+        print('Question: {0} {2} {1}'.format(num1, num2, operation))
 
 
 def randomize_operator():
