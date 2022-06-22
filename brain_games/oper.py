@@ -6,6 +6,7 @@ of the brain_calc.py.
 """
 
 from random import randint
+
 import prompt
 
 
@@ -30,6 +31,15 @@ def gcd(num1, num2):
     return num1 + num2
 
 
+def isPrime(num):
+    if num % 2 == 0:
+        return num == 2
+    d = 3
+    while d * d <= num and num % d != 0:
+        d += 2
+    return d * d > num
+
+
 def arithmetic_question(num1, num2, operation):
     print('Question: {0} {2} {1}'.format(num1, num2, operation))
 
@@ -49,7 +59,7 @@ def randomize_operator():
 
 def uncorrect_answ(answer, correct_answ, name):
     print(
-        '"{0}" is wrong answer ;(. Correct answer was "{1}".\nLet`s try again, {2}'
+        '"{0}" is wrong answer ;(. Correct answer was "{1}".\nLet`s try again, {2}!'
         .format(answer, correct_answ, name)
         )
 
