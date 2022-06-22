@@ -8,7 +8,6 @@ from brain_games.cli import welcome_user
 def main():
     """Let`s start!"""
     i = 0
-    answer = ''
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print("Answer 'yes' if the number is even, otherwise answer 'no'.")

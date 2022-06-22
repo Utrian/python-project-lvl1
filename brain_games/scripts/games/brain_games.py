@@ -1,9 +1,8 @@
 #!/home/paul/python-project-lvl1/python-project-lvl1/.venv/bin/python3
 
-"""Docestring for linter."""
+"""Docstring for linter."""
 
 from brain_games.cli import welcome_user
-from scripts.brain_even import even_game
 
 
 def main():
