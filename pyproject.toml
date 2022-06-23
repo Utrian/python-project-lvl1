@@ -1,8 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "This package contains the mind games scripts
-				and the dependencies to make them work."
+description = "This package contains the mind games scripts and the dependencies to make them work."
 authors = ["Paul Nikolaevskiy <paulnikolaevsky@gmail.com>"]
 packages = [
 	{ include = "brain_games" }
