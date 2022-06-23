@@ -1,11 +1,13 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "This package contains the mind games scripts
+				and the dependencies to make them work."
 authors = ["Paul Nikolaevskiy <paulnikolaevsky@gmail.com>"]
 packages = [
 	{ include = "brain_games" }
 ]
+repository = "https://github.com/Utrian/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.8"

@@ -1,5 +1,3 @@
-#!/home/paul/python-project-lvl1/python-project-lvl1/.venv/bin/python3
-
 """Docstring for linter."""
 
 from brain_games.cli import welcome_user

@@ -1,4 +1,4 @@
-
+"This module is an implementation of the game \"is it a prime number?\"."
 
 import prompt
 
