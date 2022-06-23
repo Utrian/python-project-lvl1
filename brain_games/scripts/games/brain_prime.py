@@ -1,12 +1,12 @@
 "This module is an implementation of the game \"is it a prime number?\"."
 
+from random import randint
+
 import prompt
 
 from brain_games.cli import welcome_user
 
 from brain_games.oper import isPrime, uncorrect_answ
-
-from random import randint
 
 
 def main():
