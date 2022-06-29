@@ -14,16 +14,17 @@ prompt = "^0.4.1"
 asciinema = "^2.2.0"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.games.brain_games:main"
-brain-even = "brain_games.scripts.games.brain_even:main"
-brain-calc = "brain_games.scripts.games.brain_calc:main"
-brain-gcd = "brain_games.scripts.games.brain_gcd:main"
-brain-progression = "brain_games.scripts.games.brain_progression:main"
-brain-prime = "brain_games.scripts.games.brain_prime:main"
+brain-games = "brain_games.scripts.games:main"
+brain-even = "brain_games.scripts.even:main"
+brain-calc = "brain_games.scripts.calc:main"
+brain-gcd = "brain_games.scripts.gcd:main"
+brain-prime = "brain_games.scripts.prime:main"
+brain-progression = "brain_games.scripts.progression:main"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
 wemake-python-styleguide = "^0.16.1"
+ipykernel = "^6.15.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
