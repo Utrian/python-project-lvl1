@@ -6,10 +6,10 @@ from random import randint
 
 
 def even(name, i):
-    if i == 0: 
+    if i == 0:
         print(
-        "Answer 'yes' if the number is even, "
-        "otherwise answer 'no'."
+            "Answer 'yes' if the number is even, "
+            "otherwise answer 'no'."
         )
     num = randint(1, 100)
     print('Question: ' + str(num))

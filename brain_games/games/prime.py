@@ -15,10 +15,10 @@ def isPrime(num):
 
 
 def prime(name, i):
-    if i == 0: 
+    if i == 0:
         print(
-        'Answer "yes" if given number is prime. '
-        'Otherwise answer "no".'
+            'Answer "yes" if given number is prime. '
+            'Otherwise answer "no".'
         )
     num = randint(1, 3571)
     print('Question: ' + str(num))
@@ -34,8 +34,8 @@ def prime(name, i):
         else:
             correct_answer = 'yes'
         print(
-        '"{0}" is wrong answer ;(. Correct answer was "{1}". '
-        'Let\'s try again, {2}!'
-        .format(answer, correct_answer, name)
+            '"{0}" is wrong answer ;(. Correct answer was "{1}". '
+            'Let\'s try again, {2}!'
+            .format(answer, correct_answer, name)
         )
         return False

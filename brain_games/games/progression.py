@@ -35,7 +35,7 @@ def progression(name, i):
     print('Question:' + arith_progression)
     answ = prompt.integer('Your answer: ')
     if answ == correct_answ:
-        return True            
+        return True
     else:
         print(
             '"{0}" is wrong answer ;(. Correct answer was "{1}". '

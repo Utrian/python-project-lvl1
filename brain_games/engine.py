@@ -17,5 +17,5 @@ def run_game(game):
             print('Correct!')
             i += 1
         else:
-            return 
+            return
     print("Congratulations, {0}!".format(name))

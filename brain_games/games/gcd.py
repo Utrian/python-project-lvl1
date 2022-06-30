@@ -1,4 +1,7 @@
-"""This game tests the user's understanding of finding the greatest common divisor."""
+"""
+This game tests the user's understanding 
+of finding the greatest common divisor.
+"""
 
 import prompt
 
@@ -6,10 +9,10 @@ from random import randint
 
 
 def gcd(name, i):
-    if i == 0: 
+    if i == 0:
         print(
-        'Find the greatest common '
-        'divisor of given numbers.'
+            'Find the greatest common '
+            'divisor of given numbers.'
         )
     num1 = randint(1, 100)
     num2 = randint(1, 100)

@@ -31,7 +31,8 @@ def check_answer(answer, correct_answer, name):
 
 
 def calc(name, i):
-    if i == 0: print('What is the result of the expression?')
+    if i == 0:
+        print('What is the result of the expression?')
     num1 = randint(1, 100)
     num2 = randint(1, 100)
     operator = randomize_operator()
