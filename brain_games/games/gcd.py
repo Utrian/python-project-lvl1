@@ -1,5 +1,5 @@
 """
-This game tests the user's understanding 
+This game tests the user's understanding
 of finding the greatest common divisor.
 """
 
