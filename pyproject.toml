@@ -2,15 +2,30 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "This package contains the mind games scripts and the dependencies to make them work."
-authors = ["Paul Nikolaevskiy <paulnikolaevsky@gmail.com>"]
+authors = [
+	"Paul Nikolaevskiy <paulnikolaevsky@gmail.com>"
+]
 packages = [
 	{ include = "brain_games" }
 ]
 repository = "https://github.com/Utrian/python-project-lvl1"
 
+classifiers = [
+	"Topic :: Games/Entertainment",
+	"Development Status :: 6 - Mature",
+	"Programming Language :: Python :: 3.8",
+	"Operating System :: OS Independent"
+]
+
 [tool.poetry.dependencies]
 python = "^3.8"
 prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+wemake-python-styleguide = "^0.16.1"
+prompt = "^0.4.1"
+ipykernel = "^6.15.0"
 asciinema = "^2.2.0"
 
 [tool.poetry.scripts]
@@ -20,11 +35,6 @@ brain-calc = "brain_games.scripts.calc:main"
 brain-gcd = "brain_games.scripts.gcd:main"
 brain-prime = "brain_games.scripts.prime:main"
 brain-progression = "brain_games.scripts.progression:main"
-
-[tool.poetry.dev-dependencies]
-flake8 = "^4.0.1"
-wemake-python-styleguide = "^0.16.1"
-ipykernel = "^6.15.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
