@@ -4,15 +4,13 @@ the missing number in an arithmetic
 progression.
 """
 
-import prompt
-
 from random import randint
 
 
 def progression(iteration_number):
     if iteration_number == 0:
         rules = 'What number is missing in the progression?'
-    else: 
+    else:
         rules = None
     start_number = randint(1, 100)
     next_number = start_number

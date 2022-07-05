@@ -15,11 +15,13 @@ def isPrime(number):
 def prime(iteration_number):
     if iteration_number == 0:
         rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    else: 
+    else:
         rules = None
     number = randint(1, 3571)
     question = str(number)
     correct_answer = isPrime(number)
-    if correct_answer: correct_answer = 'yes'
-    else: correct_answer = 'no'
+    if correct_answer:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return rules, question, correct_answer
