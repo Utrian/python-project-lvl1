@@ -3,19 +3,23 @@ This module contains the basis
 for the operation of the "mind game".
 """
 
-import prompt
-
 
 def run_game(game):
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = input('May I have your name? ')
     print("Hello, {0}!".format(name))
-    i = 0
-    while i < 3:
-        result = game(name, i)
-        if result:
+    for iteration_number in range(3):
+        rules, question, correct_answer = game(iteration_number)
+        if iteration_number == 0: print(rules, 'Question: ' + question, sep='\n')
+        else: print('Question: ' + question)
+        answer = input('Your answer: ')
+        if answer == str(correct_answer):
             print('Correct!')
-            i += 1
         else:
+            print(
+                '"{0}" is wrong answer ;(. Correct answer was "{1}". '
+                'Let\'s try again, {2}!'
+                .format(answer, correct_answer, name)
+            )
             return
     print("Congratulations, {0}!".format(name))

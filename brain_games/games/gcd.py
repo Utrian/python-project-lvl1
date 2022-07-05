@@ -3,33 +3,21 @@ This game tests the user's understanding
 of finding the greatest common divisor.
 """
 
-import prompt
-
 from random import randint
 
 
-def gcd(name, i):
-    if i == 0:
-        print(
-            'Find the greatest common '
-            'divisor of given numbers.'
-        )
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
-    print('Question: {0} {1}'.format(num1, num2))
-    answer = prompt.integer('Your answer: ')
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
+def gcd(iteration_number):
+    if iteration_number == 0:
+        rules = 'Find the greatest common divisor of given numbers.'
+    else: 
+        rules = None
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    question = '{0} {1}'.format(number1, number2)
+    while number1 != 0 and number2 != 0:
+        if number1 > number2:
+            number1 = number1 % number2
         else:
-            num2 = num2 % num1
-    correct_answer = num1 + num2
-    if answer == correct_answer:
-        return True
-    else:
-        print(
-            '"{0}" is wrong answer ;(. Correct answer was "{1}". '
-            'Let\'s try again, {2}!'
-            .format(answer, correct_answer, name)
-        )
-        return False
+            number2 = number2 % number1
+    correct_answer = number1 + number2
+    return rules, question, correct_answer
