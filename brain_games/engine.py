@@ -10,8 +10,8 @@ def run_game(game):
     print("Hello, {0}!".format(name))
     for iteration_number in range(3):
         rules, question, correct_answer = game(iteration_number)
-        if iteration_number == 0: print(rules, 'Question: ' + question, sep='\n')
-        else: print('Question: ' + question)
+        if iteration_number == 0: print(rules, 'Question: ' + question.strip(), sep='\n')
+        else: print('Question: ' + question.strip())
         answer = input('Your answer: ')
         if answer == str(correct_answer):
             print('Correct!')
