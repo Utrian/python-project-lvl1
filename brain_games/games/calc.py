@@ -1,36 +1,33 @@
 """This game feature tests the user's arithmetic ability."""
 
-from random import randint
+import operator
+
+import random
 
 
-def randomize_operator():
-    sum = [0, '+']
-    diff = [1, '-']
-    mult = [2, '*']
-    operator = randint(0, 2)
-    if operator == 0:
-        return sum[1]
-    elif operator == 1:
-        return diff[1]
-    else:
-        return mult[1]
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def calc(iteration_number):
-    if iteration_number == 0:
-        rules = 'What is the result of the expression?'
-    else:
-        rules = None
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    operator = randomize_operator()
-    question = '{0} {2} {1}'.format(number1, number2, operator)
-    if operator == '+':
-        correct_answer = number1 + number2
-        return rules, question, correct_answer
-    if operator == '-':
-        correct_answer = number1 - number2
-        return rules, question, correct_answer
-    if operator == '*':
-        correct_answer = number1 * number2
-        return rules, question, correct_answer
+def get_question_and_correct_answer(number1, number2, operation, func):
+    question = 'Question: {0} {2} {1}'.format(number1, number2, operation)
+    correct_answer = str(func(number1, number2))
+    return question, correct_answer
+
+
+def calc():
+    number1 = random.randint(1, 100)
+    number2 = random.randint(1, 100)
+    operations = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul
+    }
+    operation = random.choice(list(operations.keys()))
+    function_operation = operations[operation]
+    return get_question_and_correct_answer(
+        number1, number2, operation, function_operation
+    )
+
+
+def start():
+    return calc()

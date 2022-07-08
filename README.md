@@ -24,3 +24,4 @@ brain-even | determination of an even or odd number | [[brain-even](https://asci
 brain-gcd | finding the greatest common divisor | [[brain-gcd](https://asciinema.org/a/ACYpgT8hSK3jpkscoEy2HUX00)]
 brain-prime | definition of a prime number | [[brain-prime](https://asciinema.org/a/FUaLvolt9P3a3vcVGdyS8JG8v)]
 brain-progression | search for a missing number in an arithmetic progression | [[brain-progression](https://asciinema.org/a/sIEpWOW751XGGJTsJFC4758uq)]
+

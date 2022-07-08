@@ -2,8 +2,16 @@
 
 from random import randint
 
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def isPrime(number):
+
+def get_question_and_correct_answer(number):
+    question = 'Question: {0}'.format(str(number))
+    correct_answer = 'yes' if is_prime(number) else 'no'
+    return question, correct_answer
+
+
+def is_prime(number):
     if number % 2 == 0:
         return number == 2
     divisor = 3
@@ -12,16 +20,10 @@ def isPrime(number):
     return divisor * divisor > number
 
 
-def prime(iteration_number):
-    if iteration_number == 0:
-        rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    else:
-        rules = None
+def prime():
     number = randint(1, 3571)
-    question = str(number)
-    correct_answer = isPrime(number)
-    if correct_answer:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
-    return rules, question, correct_answer
+    return get_question_and_correct_answer(number)
+
+
+def start():
+    return prime()

@@ -2,16 +2,22 @@
 
 from random import randint
 
+DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'."
 
-def even(iteration_number):
-    if iteration_number == 0:
-        rules = "Answer 'yes' if the number is even, otherwise answer 'no'."
-    else:
-        rules = None
-    number = randint(1, 100)
-    question = str(number)
+
+def get_question_and_correct_answer(number):
+    question = 'Question: {0}'.format(str(number))
     if number % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return rules, question, correct_answer
+    return question, correct_answer
+
+
+def even():
+    number = randint(1, 100)
+    return get_question_and_correct_answer(number)
+
+
+def start():
+    return even()

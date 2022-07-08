@@ -6,31 +6,26 @@ progression.
 
 from random import randint
 
+DESCRIPTION = 'What number is missing in the progression?'
 
-def progression(iteration_number):
-    if iteration_number == 0:
-        rules = 'What number is missing in the progression?'
-    else:
-        rules = None
-    start_number = randint(1, 100)
-    next_number = start_number
-    arith_progression = ''
+
+def get_question_and_correct_answer(length, start, step, hidden_index):
+    progression = list(range(start, (start + length * step), step))
+    correct_answer, progression[hidden_index] = progression[hidden_index], ".."
+    progression = [str(num) for num in progression]
+    progression = ' '.join(progression)
+    question = 'Question: {0}'.format(progression)
+    return question, correct_answer
+
+
+def progression():
+    length = 10
+    start = randint(1, 100)
     step = randint(1, 5)
-    skip_number = randint(1, 10)
-    iteration_counter = 1
-    while iteration_counter != 11:
-        if iteration_counter != skip_number:
-            next_number += step
-            arith_progression = (
-                arith_progression + " " + str(next_number)
-            )
-            iteration_counter += 1
-        else:
-            next_number += step
-            correct_answ = next_number
-            arith_progression = (
-                arith_progression + " " + ".."
-            )
-            iteration_counter += 1
-    question = arith_progression
-    return rules, question, correct_answ
+    hidden_index = randint(0, 9)
+    return get_question_and_correct_answer(length, start, step, hidden_index)
+    
+
+
+def start():
+    return progression()
