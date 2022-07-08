@@ -17,7 +17,7 @@ def run_game(game):
     user_name = welcome_user()
     print(game.DESCRIPTION)
     for _ in range(3):
-        question, correct_answer = game.start()
+        question, correct_answer = game.get_question_and_correct_answer()
         print(question)
         answer = prompt.string('Your answer: ')
         if answer == str(correct_answer):

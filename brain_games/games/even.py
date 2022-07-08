@@ -5,19 +5,8 @@ from random import randint
 DESCRIPTION = "Answer 'yes' if the number is even, otherwise answer 'no'."
 
 
-def get_question_and_correct_answer(number):
-    question = 'Question: {0}'.format(str(number))
-    if number % 2 == 0:
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
-    return question, correct_answer
-
-
-def even():
+def get_question_and_correct_answer():
     number = randint(1, 100)
-    return get_question_and_correct_answer(number)
-
-
-def start():
-    return even()
+    question = 'Question: {0}'.format(number)
+    correct_answer = 'yes' if number % 2 == 0 else 'no'
+    return question, correct_answer
