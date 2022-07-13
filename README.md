@@ -1,6 +1,6 @@
 ### Hexlet tests, linter status and Code Climate:
 [![Actions Status](https://github.com/Utrian/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Utrian/python-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c6274389293ece7f63cb/maintainability)](https://codeclimate.com/github/Utrian/python-project-lvl1/maintainability)
 
 # Description
 This project is a collection of mathematical games.

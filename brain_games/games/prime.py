@@ -6,6 +6,8 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
+    if number < 2:
+        return False
     if number % 2 == 0:
         return number == 2
     divisor = 3
@@ -16,6 +18,7 @@ def is_prime(number):
 
 def get_question_and_correct_answer():
     number = randint(1, 3571)
-    question = 'Question: {0}'.format(number)
+    
+    question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer
