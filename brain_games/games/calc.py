@@ -11,7 +11,7 @@ DESCRIPTION = 'What is the result of the expression?'
 def get_question_and_correct_answer():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
-    
+
     operations = {
         '+': operator.add,
         '-': operator.sub,

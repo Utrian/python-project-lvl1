@@ -18,7 +18,7 @@ def is_prime(number):
 
 def get_question_and_correct_answer():
     number = randint(1, 3571)
-    
+
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer
