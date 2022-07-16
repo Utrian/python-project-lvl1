@@ -19,6 +19,6 @@ def get_question_and_correct_answer():
     }
     operation = random.choice(list(operations.keys()))
     function_operation = operations[operation]
-    question = '{0} {2} {1}'.format(number1, number2, operation)
+    question = f'{number1} {operation} {number2}'
     correct_answer = str(function_operation(number1, number2))
     return question, correct_answer
