@@ -19,8 +19,7 @@ def get_question_and_correct_answer():
         first_number,
         (first_number + amount_numbers * step),
         step
-        )
-    )
+    ))
     correct_answer, progression[hidden_index] = progression[hidden_index], ".."
     question = ' '.join(map(str, progression))
     return question, str(correct_answer)
