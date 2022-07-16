@@ -14,17 +14,17 @@ def welcome_user():
 
 
 def run_game(game):
-    amount_rounds = 3
+    rounds_count = 3
 
     user_name = welcome_user()
     print(game.DESCRIPTION)
-    for _ in range(amount_rounds):
+    for _ in range(rounds_count):
         question, correct_answer = game.get_question_and_correct_answer()
         print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
-        if answer != correct_answer:
+        user_answer = prompt.string('Your answer: ')
+        if user_answer != correct_answer:
             print(
-                f'"{answer}" is wrong answer ;(. '
+                f'"{user_answer}" is wrong answer ;(. '
                 f'Correct answer was "{correct_answer}". '
                 f'Let\'s try again, {user_name}!'
             )
