@@ -8,7 +8,7 @@ from random import randint
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def get_gcd(number1, number2):
+def get_greatest_common_divisor(number1, number2):
     while number1 != 0 and number2 != 0:
         if number1 > number2:
             number1 = number1 % number2
@@ -22,4 +22,4 @@ def get_question_and_correct_answer():
     number2 = randint(1, 100)
 
     question = f'{number1} {number2}'
-    return question, str(get_gcd(number1, number2))
+    return question, str(get_greatest_common_divisor(number1, number2))
