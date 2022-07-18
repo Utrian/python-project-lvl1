@@ -4,7 +4,7 @@ the missing number in an arithmetic
 progression.
 """
 
-from random import randint
+from random import randint, randrange
 
 DESCRIPTION = 'What number is missing in the progression?'
 
@@ -23,7 +23,7 @@ def get_question_and_correct_answer():
     numbers_count = 10
     first_number = randint(1, 100)
     step = randint(1, 5)
-    hidden_index = randint(0, 9)
+    hidden_index = randrange(0, numbers_count)
 
     progression = get_progression(first_number, numbers_count, step)
     correct_answer, progression[hidden_index] = progression[hidden_index], ".."
